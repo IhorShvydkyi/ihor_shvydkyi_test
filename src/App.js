@@ -1,11 +1,7 @@
-import { ToastContainer } from 'react-toastify';
-import Container from './components/Container';
-import './App.css';
+import Container from './components/Container/Container';
 
-export default function App() {
-  return (
-    <Container title="Hello world!">
-      <ToastContainer />
-    </Container>
-  );
-}
+const App = () => {
+  return <Container></Container>;
+};
+
+export default App;

@@ -1,16 +1,12 @@
-import PropTypes from 'prop-types';
-import s from './Container.module.css';
+import { ContainerMain } from './Container.styled';
 
-export default function Container({ title, children }) {
+const Container = ({ children }) => {
   return (
-    <div className={s.container}>
-      {title && <h1 className={s.title}>{title}</h1>}
+    <ContainerMain>
+      Who wants to be a millionaire?
       {children}
-    </div>
+    </ContainerMain>
   );
-}
-
-Container.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.node,
 };
+
+export default Container;
