@@ -3,7 +3,11 @@ function MainPage() {
   return (
     <div className={s.mainGameWrapper}>
       <div className={s.mainGameBoard}>
-        <div className={s.mainGameQuestion}>Question</div>
+        <div className={s.mainGameQuestionsBlock}>
+          <h2 className={s.mainGameQuestion}>
+            In the UK, the abbreviation NHS stands for National 'what' Service?
+          </h2>
+        </div>
         <div className={s.mainGameAnswers}>
           <div>123</div>
           <div>123</div>
@@ -11,7 +15,7 @@ function MainPage() {
           <div>123</div>
         </div>
       </div>
-      <div className="mainGameScore"></div>
+      <div className={s.mainGameScore}></div>
     </div>
   );
 }
