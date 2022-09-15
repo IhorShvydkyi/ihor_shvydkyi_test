@@ -1,19 +1,18 @@
-import { MainPageStyled, MainPart, RoundsPart } from './MainPage.styled';
-import Answers from 'components/Answers/Answers';
-import Questions from 'components/Questions/Questions';
-import Rounds from 'components/Rounds/Rounds';
-
+import s from './MainPage.module.css';
 function MainPage() {
   return (
-    <MainPageStyled>
-      <MainPart>
-        <Questions />
-        <Answers />
-      </MainPart>
-      <RoundsPart>
-        <Rounds />
-      </RoundsPart>
-    </MainPageStyled>
+    <div className={s.mainGameWrapper}>
+      <div className={s.mainGameBoard}>
+        <div className={s.mainGameQuestion}>Question</div>
+        <div className={s.mainGameAnswers}>
+          <div>123</div>
+          <div>123</div>
+          <div>123</div>
+          <div>123</div>
+        </div>
+      </div>
+      <div className="mainGameScore"></div>
+    </div>
   );
 }
 

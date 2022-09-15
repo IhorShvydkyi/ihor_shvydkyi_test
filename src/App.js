@@ -4,10 +4,8 @@ import StartPage from './pages/StartPage/StartPage';
 
 const App = () => {
   return (
-    <Container>
-      <StartPage />
-      {/* <MainPage /> */}
-    </Container>
+    // <StartPage />
+    <MainPage />
   );
 };
 
