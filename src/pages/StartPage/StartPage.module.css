@@ -35,7 +35,7 @@
   text-decoration: none;
   padding: 15px 100px;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .startGameWrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 50% 50%;

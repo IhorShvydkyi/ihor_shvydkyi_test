@@ -1,9 +1,44 @@
+.answerDisabled {
+  position: relative;
+}
+.answerDisabled.correct:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -17px;
+  right: -17px;
+  z-index: 10;
+  background: transparent;
+}
 .answerWrap {
   position: relative;
   width: 371.77px;
   cursor: pointer;
   margin: 0 17px 32px 17px;
   z-index: 2;
+}
+.answerWrap.selected path {
+  stroke: yellow !important;
+  fill: yellow !important;
+}
+.answerWrap.selected:hover:before {
+  background-color: yellow !important;
+}
+.answerWrap.correct path {
+  stroke: green !important;
+  fill: green !important;
+}
+.answerWrap.correct:hover:before {
+  background-color: green;
+}
+.answerWrap.wrong path {
+  stroke: red;
+  fill: red;
+}
+.answerWrap.wrong:hover:before {
+  background-color: red;
 }
 
 .answerWrap:before {
@@ -54,9 +89,7 @@
 .answerWrap:hover path {
   stroke: #ff8b37;
 }
+
 .answerWrap:hover:before {
   background-color: #ff8b37;
-}
-.answerDesabled {
-  position: relative;
 }

@@ -4,27 +4,27 @@ import './Answers.css';
 function Answers({ answer, letter, currentAnswer, onSelect, disableButtons }) {
   const [status, setStatus] = useState('');
 
-  // const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
   useEffect(() => {
     setStatus('');
   }, [currentAnswer]);
 
-  function handleClick() {
-    // disableButtons();
+  async function handleClick() {
+    disableButtons();
     setStatus('selected');
-
+    await delay(700);
     if (currentAnswer.includes(answer)) {
       setStatus('correct');
     } else {
       setStatus('wrong');
     }
-
+    await delay(1000);
     onSelect(answer);
   }
   // console.log('click', handleClick);
   return (
-    <div className={`answerDesabled ${status}`}>
+    <div className={`answerDisabled ${status}`}>
       <div className={`answerWrap ${status}`} onClick={handleClick}>
         <p className="answerContent">
           <span className="answerLetter">{letter}</span>

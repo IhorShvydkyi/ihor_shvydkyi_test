@@ -44,3 +44,24 @@
   flex-direction: column-reverse;
   justify-content: center;
 }
+
+.menu {
+  display: none;
+}
+/* .menu .svg {
+  display: none;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  transition: 0.3s;
+} */
+@media (mix-width: 320px) and (max-width: 767px) {
+  .mainGameWrapper {
+    overflow-x: auto;
+  }
+  .mainGameBoard {
+    width: 100%;
+    padding: 20px 0 32px 0;
+    align-items: center;
+  }
+}
