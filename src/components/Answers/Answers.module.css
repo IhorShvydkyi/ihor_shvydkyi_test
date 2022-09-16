@@ -1,0 +1,58 @@
+.answersBlock {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 80px;
+  /* margin-bottom: 120px; */
+}
+.answerWrap {
+  position: relative;
+  width: 371.77px;
+  cursor: pointer;
+  margin: 0 17px 32px 17px;
+  z-index: 2;
+}
+.answerWrap::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 405px;
+  position: absolute;
+  top: 47%;
+  left: -17px;
+  background-color: #ccc;
+  transition: 0.3s;
+  z-index: -1;
+}
+.answerContent {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 32px;
+  width: 330px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+.answerLetter {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: orange;
+  margin-right: 8px;
+}
+.answerLine {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  z-index: 1;
+  transition: 0.3s;
+}
+.swgWrap {
+  z-index: 1;
+}

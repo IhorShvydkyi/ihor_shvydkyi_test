@@ -4,9 +4,9 @@ import StartPage from './pages/StartPage/StartPage';
 
 const App = () => {
   return (
-    // <StartPage />
+    <StartPage />
     // <MainPage />
-    <FinishPage />
+    // <FinishPage />
   );
 };
 

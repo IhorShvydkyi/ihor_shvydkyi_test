@@ -22,13 +22,10 @@
   width: 100%;
   height: fit-content;
 }
-.finishGameTotal {
-  color: #88888c;
-  font-size: 32px;
-  margin: 0;
-}
-.startGameScore {
+
+.startGameTitle {
   font-size: 56px;
+  margin-bottom: 100px;
 }
 .startGameButton {
   background: #ff8b37;
@@ -48,17 +45,19 @@
     align-self: end;
     justify-self: center;
     width: 90%;
+    margin-bottom: 25px;
   }
   .startGameLogic {
     align-self: start;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-align: center;
     width: 100%;
     height: 100%;
   }
-  .startGameScore {
+  .startGameTitle {
     font-size: 32px;
+    margin-bottom: 100px;
   }
   .startGameButton {
     padding: 10px 50px;

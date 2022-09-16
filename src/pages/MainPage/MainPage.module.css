@@ -25,11 +25,11 @@
 .mainGameQuestion {
   font-size: 32px;
 }
-.mainGameAnswers {
+/* .mainGameAnswers {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-}
+} */
 .mainGameScore {
   display: flex;
   padding: 10px 0;
