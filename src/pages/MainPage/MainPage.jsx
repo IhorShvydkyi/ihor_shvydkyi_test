@@ -1,5 +1,6 @@
 import s from './MainPage.module.css';
 import Answers from '../../components/Answers/Answers';
+import Rounds from 'components/Rounds/Rounds';
 function MainPage() {
   return (
     <div className={s.mainGameWrapper}>
@@ -13,7 +14,9 @@ function MainPage() {
           <Answers />
         </div>
       </div>
-      <div className={s.mainGameScore}></div>
+      <div className={s.mainGameScore}>
+        <Rounds />
+      </div>
     </div>
   );
 }

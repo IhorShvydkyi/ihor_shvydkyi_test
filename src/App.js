@@ -4,8 +4,8 @@ import StartPage from './pages/StartPage/StartPage';
 
 const App = () => {
   return (
-    <StartPage />
-    // <MainPage />
+    // <StartPage />
+    <MainPage />
     // <FinishPage />
   );
 };

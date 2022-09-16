@@ -2,30 +2,40 @@ import React, { useState } from 'react';
 import s from './Rounds.module.css';
 
 function Rounds() {
-  const roundsPiramid = [
-    { id: 1, amount: '$ 500' },
-    { id: 2, amount: '$ 1000' },
-    { id: 3, amount: '$ 2000' },
-    { id: 4, amount: '$ 4000' },
-    { id: 5, amount: '$ 8000' },
-    { id: 6, amount: '$ 16000' },
-    { id: 7, amount: '$ 32000' },
-    { id: 8, amount: '$ 64000' },
-    { id: 9, amount: '$ 125000' },
-    { id: 10, amount: '$ 250000' },
-    { id: 11, amount: '$ 500000' },
-    { id: 12, amount: '$ 1000000' },
-  ].reverse();
   return (
-    <div>
-      <ul className={s.roundList}>
-        {roundsPiramid.map(round => (
-          <li className="roundsItem">
-            {/* <span>{round.id}</span> */}
-            <span className="roundsAmount">{round.amount}</span>
-          </li>
-        ))}
-      </ul>
+    <div className={s.roundsContainer}>
+      <div className={s.roundsBlock}>
+        <p className={s.roundsContent}>500</p>
+        <div className={s.roundsLine}></div>
+        <div className={s.roundsSvgWarp}>
+          <svg
+            width="240"
+            height="40"
+            viewBox="0 0 240 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4526 4.63788C15.6376 2.01596 18.8742 0.5 22.2872 0.5H217.713C221.126 0.5 224.362 2.01597 226.547 4.63788L239.349 20L226.547 35.3621C224.362 37.984 221.126 39.5 217.713 39.5H22.2872C18.8742 39.5 15.6376 37.984 13.4526 35.3621L0.650853 20L13.4526 4.63788Z"
+              fill="white"
+              stroke="#D0D0D8"
+            />
+          </svg>
+          {/* <svg
+          width="240"
+          height="32"
+          viewBox="0 0 240 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.5303 3.70404C15.6719 1.64809 18.5256 0.5 21.4944 0.5H218.506C221.474 0.5 224.328 1.64809 226.47 3.70404L239.278 16L226.47 28.296C224.328 30.3519 221.474 31.5 218.506 31.5H21.4944C18.5256 31.5 15.6719 30.3519 13.5303 28.296L0.721988 16L13.5303 3.70404Z"
+            fill="white"
+            stroke="#D0D0D8"
+          />
+        </svg> */}
+        </div>
+      </div>
     </div>
   );
 }
