@@ -3,7 +3,7 @@ import s from './FinishPage.module.css';
 import handPicture from '../../images/hand.svg';
 import MainPage from 'pages/MainPage/MainPage';
 
-function FinishPage() {
+function FinishPage({ score }) {
   const [start, setStart] = useState(false);
 
   if (start === false) {
@@ -12,7 +12,7 @@ function FinishPage() {
         <img alt="hand up" className={s.finishGameImg} src={handPicture} />
         <div className={s.finishGameLogic}>
           <p className={s.finishGameTotal}>Total score:</p>
-          <h1 className={s.finishGameScore}>$0 earnd</h1>
+          <h1 className={s.finishGameScore}>${score ? score : '0'}</h1>
           <div onClick={() => setStart(true)} className={s.finishGameButton}>
             Try again
           </div>

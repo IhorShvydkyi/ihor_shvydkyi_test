@@ -1,0 +1,201 @@
+{
+	"round": [
+		"500",
+		"1,000",
+		"2,000",
+		"4,000",
+		"8,000",
+		"16,000",
+		"32,000",
+		"64,000",
+		"125,000",
+		"250,000",
+		"500,000",
+		"1,000,000"
+	],
+	"questions": [
+		{
+			"id": 1,
+			"question": "Which of these is not a JavaScript library?",
+			"answers": [
+				"jQuery",
+				"Angular",
+				"React",
+				"CSS"
+			],
+			"rightAnswer": [
+				"Angular"
+			]
+		},
+		{
+			"id": 2,
+			"question": "Who has the most subscribers on instagram in the world?",
+			"answers": [
+				"Cristiano Ronaldo",
+				"Lionel Messi",
+				"Lady Gaga",
+				"Volodymyr Zelenskyi",
+				"I thoght it must be 4 questions"
+			],
+			"rightAnswer": [
+				"Cristiano Ronaldo"
+			]
+		},
+		{
+			"id": 3,
+			"question": "How many zeros are there in the number one million?",
+			"answers": [
+				"1",
+				"2",
+				"3",
+				"6"
+			],
+			"rightAnswer": [
+				"6"
+			]
+		},
+		{
+			"id": 4,
+			"question": "London is the capital city of which country?",
+			"answers": [
+				"Great Britain",
+				"Australia",
+				"France",
+				"Egypt"
+			],
+			"rightAnswer": [
+				"Great Britain"
+			]
+		},
+		{
+			"id": 5,
+			"question": "In what country is the Eiffel Tower?",
+			"answers": [
+				"France",
+				"USA",
+				"Ukraine",
+				"Madagaskar"
+			],
+			"rightAnswer": [
+				"France"
+			]
+		},
+		{
+			"id": 6,
+			"question": "Which is the largest country by population?",
+			"answers": [
+				"USA",
+				"Ukraine",
+				"China",
+				"India"
+			],
+			"rightAnswer": [
+				"China"
+			]
+		},
+		{
+			"id": 7,
+			"question": "Which of these is not a framework for building Android application?",
+			"answers": [
+				"React Native",
+				"Ionic",
+				"Phonegap",
+				"Kotlin"
+			],
+			"rightAnswer": [
+				"Kotlin"
+			]
+		},
+		{
+			"id": 8,
+			"question": "The largest planet is?",
+			"answers": [
+				"Saturn",
+				"Jupiter",
+				"Earth",
+				"Uranium"
+			],
+			"rightAnswer": [
+				"Jupiter"
+			]
+		},
+		{
+			"id": 9,
+			"question": "When did The Avengers come out?",
+			"answers": [
+				"May 2, 2008",
+				"May 4, 2012",
+				"May 3, 2013",
+				"April 4, 2014"
+			],
+			"rightAnswer": [
+				"May 2, 2008"
+			]
+		},
+		{
+			"id": 10,
+			"question": "What planet is closest to the sun?",
+			"answers": [
+				"Mars",
+				"Mercury",
+				"Sneakers",
+				"Earth"
+			],
+			"rightAnswer": [
+				"Mercury"
+			]
+		},
+		{
+			"id": 11,
+			"question": "What is the capital of Spain?",
+			"answers": [
+				"Berlin",
+				"Buenos Aires",
+				"Madrid",
+				"San Juan"
+			],
+			"rightAnswer": [
+				"Madrid"
+			]
+		},
+		{
+			"id": 12,
+			"question": "How many legs dogs have",
+			"answers": [
+				"5",
+				"3",
+				"2",
+				"4"
+			],
+			"rightAnswer": [
+				"4"
+			]
+		},
+		{
+			"id": 13,
+			"question": "Best food is",
+			"answers": [
+				"Potato",
+				"Tomato",
+				"Cheese",
+				"Apple"
+			],
+			"rightAnswer": [
+				"Potato"
+			]
+		},
+		{
+			"id": 14,
+			"question": "Best drink is",
+			"answers": [
+				"Milk",
+				"Beer",
+				"Coke",
+				"Water"
+			],
+			"rightAnswer": [
+				"Water"
+			]
+		}
+	]
+}

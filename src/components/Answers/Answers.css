@@ -1,10 +1,3 @@
-.answersBlock {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  margin-left: 80px;
-  /* margin-bottom: 120px; */
-}
 .answerWrap {
   position: relative;
   width: 371.77px;
@@ -12,7 +5,8 @@
   margin: 0 17px 32px 17px;
   z-index: 2;
 }
-.answerWrap::before {
+
+.answerWrap:before {
   content: '';
   display: block;
   height: 1px;
@@ -53,6 +47,16 @@
   z-index: 1;
   transition: 0.3s;
 }
+
 .swgWrap {
   z-index: 1;
+}
+.answerWrap:hover path {
+  stroke: #ff8b37;
+}
+.answerWrap:hover:before {
+  background-color: #ff8b37;
+}
+.answerDesabled {
+  position: relative;
 }

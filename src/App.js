@@ -1,12 +1,14 @@
-import FinishPage from 'pages/FinishPage/FinishPage';
-import MainPage from 'pages/MainPage/MainPage';
+import FinishPage from './pages/FinishPage/FinishPage';
+import MainPage from './pages/MainPage/MainPage';
 import StartPage from './pages/StartPage/StartPage';
 
 const App = () => {
   return (
-    // <StartPage />
-    <MainPage />
-    // <FinishPage />
+    <>
+      <StartPage />
+      {/* <MainPage />
+      <FinishPage /> */}
+    </>
   );
 };
 

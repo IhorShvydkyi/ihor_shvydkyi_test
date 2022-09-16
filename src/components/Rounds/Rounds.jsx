@@ -1,27 +1,39 @@
-import React, { useState } from 'react';
-import s from './Rounds.module.css';
+import React, { useState, useEffect } from 'react';
+import './Rounds.css';
 
-function Rounds() {
+function Rounds({ round, indexRound, currentIndex }) {
+  const [status, setStatus] = useState('');
+  useEffect(() => {
+    if (indexRound === 0) {
+      setStatus('current');
+    } else if (currentIndex === indexRound) {
+      setStatus('current ');
+    }
+    if (currentIndex > indexRound) {
+      setStatus('riched');
+    }
+  }, [currentIndex, indexRound]);
+  // console.log('status =>>', indexRound);
+
   return (
-    <div className={s.roundsContainer}>
-      <div className={s.roundsBlock}>
-        <p className={s.roundsContent}>500</p>
-        <div className={s.roundsLine}></div>
-        <div className={s.roundsSvgWarp}>
-          <svg
-            width="240"
-            height="40"
-            viewBox="0 0 240 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4526 4.63788C15.6376 2.01596 18.8742 0.5 22.2872 0.5H217.713C221.126 0.5 224.362 2.01597 226.547 4.63788L239.349 20L226.547 35.3621C224.362 37.984 221.126 39.5 217.713 39.5H22.2872C18.8742 39.5 15.6376 37.984 13.4526 35.3621L0.650853 20L13.4526 4.63788Z"
-              fill="white"
-              stroke="#D0D0D8"
-            />
-          </svg>
-          {/* <svg
+    <div className={`roundsBlock ${status}`}>
+      <p className="roundsContent">{round}</p>
+      <div className="roundsLine"></div>
+      <div className="roundsSvgWarp">
+        <svg
+          width="240"
+          height="40"
+          viewBox="0 0 240 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.4526 4.63788C15.6376 2.01596 18.8742 0.5 22.2872 0.5H217.713C221.126 0.5 224.362 2.01597 226.547 4.63788L239.349 20L226.547 35.3621C224.362 37.984 221.126 39.5 217.713 39.5H22.2872C18.8742 39.5 15.6376 37.984 13.4526 35.3621L0.650853 20L13.4526 4.63788Z"
+            fill="white"
+            stroke="#D0D0D8"
+          />
+        </svg>
+        {/* <svg
           width="240"
           height="32"
           viewBox="0 0 240 32"
@@ -34,7 +46,6 @@ function Rounds() {
             stroke="#D0D0D8"
           />
         </svg> */}
-        </div>
       </div>
     </div>
   );
