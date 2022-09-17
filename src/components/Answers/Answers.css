@@ -20,25 +20,25 @@
   z-index: 2;
 }
 .answerWrap.selected path {
-  stroke: #ffac70 !important;
-  fill: #fff3eb !important;
+  stroke: var(--orange_80) !important;
+  fill: var(--orange_5) !important;
 }
 .answerWrap.selected:hover:before {
-  background-color: #ffac70 !important;
+  background-color: var(--orange_80) !important;
 }
 .answerWrap.correct path {
-  stroke: #47d867 !important;
-  fill: #e6faea !important;
+  stroke: var(--green_100) !important;
+  fill: var(--green_5) !important;
 }
 .answerWrap.correct:hover:before {
-  background-color: #47d867;
+  background-color: var(--green_100);
 }
 .answerWrap.wrong path {
-  stroke: #ec6259;
-  fill: #fdeeed;
+  stroke: var(--red_100);
+  fill: var(--red_5);
 }
 .answerWrap.wrong:hover:before {
-  background-color: #ec6259;
+  background-color: var(--red_100);
 }
 
 .answerWrap:before {
@@ -54,8 +54,6 @@
   z-index: -1;
 }
 .answerContent {
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
   margin: 0;
   position: absolute;
   top: 25px;
@@ -69,7 +67,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #ff8b37;
+  color: var(--orange_100);
   margin-right: 8px;
 }
 .answerLine {
@@ -78,7 +76,7 @@
   top: 50%;
   width: 100%;
   height: 1px;
-  background-color: #d0d0d8;
+  background-color: var(--black_40);
   z-index: 1;
   transition: 0.3s;
 }
@@ -93,11 +91,11 @@
   display: none;
 }
 .answerWrap:hover path {
-  stroke: #ff8b37;
+  stroke: var(--orange_100);
 }
 
 .answerWrap:hover:before {
-  background-color: #ff8b37;
+  background-color: var(--orange_100);
 }
 .menu {
   display: none;
@@ -123,7 +121,7 @@
   }
   .answerLine {
     display: block;
-    background-color: #d0d0d8;
+    background-color: var(--black_40);
   }
 
   .svgWrap svg:first-child {
@@ -136,13 +134,13 @@
     display: none;
   }
   .answerLine.selected {
-    background-color: #ffac70;
+    background-color: var(--orange_80);
   }
   .answerLine.correct {
-    background-color: #47d867;
+    background-color: var(--green_100);
   }
   .answerLine.wrong {
-    background-color: #ec6259;
+    background-color: var(--red_100);
   }
   .menu {
     display: block;

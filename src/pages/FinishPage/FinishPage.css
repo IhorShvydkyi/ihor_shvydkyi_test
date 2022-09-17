@@ -1,5 +1,5 @@
 .finishGameWrapper {
-  background: #f5f5f7;
+  background: var(--black_5);
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -32,7 +32,7 @@
   margin-bottom: 65px;
 }
 .finishGameButton {
-  background: #ff8b37;
+  background: var(--orange_100);
   border-radius: 12px;
   color: #fff;
   font-size: 20px;
@@ -41,10 +41,10 @@
   cursor: pointer;
 }
 .finishGameButton:hover {
-  background-color: #ffac70;
+  background-color: var(--orange_80);
 }
 .finishGameButton:active {
-  background: #e87928;
+  background: var(--orange_120);
 }
 
 @media (max-width: 767px) {

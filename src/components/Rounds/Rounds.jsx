@@ -13,11 +13,10 @@ function Rounds({ round, indexRound, currentIndex }) {
       setStatus('riched');
     }
   }, [currentIndex, indexRound]);
-  // console.log('status =>>', indexRound);
 
   return (
     <div className={`roundsBlock ${status}`}>
-      <p className="roundsContent">{round}</p>
+      <p className="roundsContent">${round}</p>
       <div className="roundsLine"></div>
       <div className="roundsSvgWarp">
         <svg

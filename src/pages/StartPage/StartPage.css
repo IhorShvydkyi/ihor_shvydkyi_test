@@ -1,5 +1,5 @@
 .startGameWrapper {
-  background: linear-gradient(to bottom right, #fff 50%, #fff3eb 0);
+  background: linear-gradient(to bottom right, #fff 50%, var(--orange_5) 0);
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,11 +24,10 @@
 }
 
 .startGameTitle {
-  font-size: 56px;
   margin-bottom: 100px;
 }
 .startGameButton {
-  background: #ff8b37;
+  background: var(--orange_100);
   border-radius: 12px;
   color: #fff;
   font-size: 20px;
@@ -37,10 +36,10 @@
   cursor: pointer;
 }
 .startGameButton:hover {
-  background-color: #ffac70;
+  background-color: var(--orange_80);
 }
 .startGameButton:active {
-  background: #e87928;
+  background: var(--orange_120);
 }
 @media screen and (max-width: 767px) {
   .startGameWrapper {
@@ -62,7 +61,6 @@
     height: 100%;
   }
   .startGameTitle {
-    font-size: 32px;
     margin-bottom: 100px;
   }
   .startGameButton {
