@@ -9,4 +9,7 @@ How to start ?
 In the project directory, you need run:
 
 npm install
+
+
+
 npm start
