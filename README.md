@@ -1,5 +1,5 @@
-Who wants to be a millionaire
-Simple game created on React.
+
+Game created with React.
 
 You can simply add new questions or change questions cost in data.json .
 
