@@ -22,7 +22,7 @@ function Answers({ answer, letter, currentAnswer, onSelect, disableButtons }) {
     await delay(1000);
     onSelect(answer);
   }
-  // console.log('click', handleClick);
+
   return (
     <div className={`answerDisabled ${status}`}>
       <div className={`answerWrap ${status}`} onClick={handleClick}>
@@ -33,7 +33,6 @@ function Answers({ answer, letter, currentAnswer, onSelect, disableButtons }) {
         <div className={`answerLine ${status}`}></div>
         <div className="svgWrap">
           <svg
-            // className="svg"
             width="373"
             height="72"
             viewBox="0 0 373 72"

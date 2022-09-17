@@ -43,8 +43,6 @@ function MainPage() {
   useEffect(() => {
     if (questionsArray.length > round.length) {
       setTotalQuest(round.length);
-      // console.log('roundIndex', roundIndex);
-      // console.log('currentAnswer', currentAnswer);
     } else {
       setTotalQuest(questionsArray.length);
       setRound(round.splice(0, questionsArray.length));

@@ -20,25 +20,25 @@
   z-index: 2;
 }
 .answerWrap.selected path {
-  stroke: yellow !important;
-  fill: yellow !important;
+  stroke: #ffac70 !important;
+  fill: #fff3eb !important;
 }
 .answerWrap.selected:hover:before {
-  background-color: yellow !important;
+  background-color: #ffac70 !important;
 }
 .answerWrap.correct path {
-  stroke: green !important;
-  fill: green !important;
+  stroke: #47d867 !important;
+  fill: #e6faea !important;
 }
 .answerWrap.correct:hover:before {
-  background-color: green;
+  background-color: #47d867;
 }
 .answerWrap.wrong path {
-  stroke: red;
-  fill: red;
+  stroke: #ec6259;
+  fill: #fdeeed;
 }
 .answerWrap.wrong:hover:before {
-  background-color: red;
+  background-color: #ec6259;
 }
 
 .answerWrap:before {
@@ -69,7 +69,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: orange;
+  color: #ff8b37;
   margin-right: 8px;
 }
 .answerLine {
@@ -78,7 +78,7 @@
   top: 50%;
   width: 100%;
   height: 1px;
-  background-color: grey;
+  background-color: #d0d0d8;
   z-index: 1;
   transition: 0.3s;
 }
@@ -123,7 +123,7 @@
   }
   .answerLine {
     display: block;
-    background-color: #ccc;
+    background-color: #d0d0d8;
   }
 
   .svgWrap svg:first-child {
@@ -136,13 +136,13 @@
     display: none;
   }
   .answerLine.selected {
-    background-color: yellow;
+    background-color: #ffac70;
   }
   .answerLine.correct {
-    background-color: freen;
+    background-color: #47d867;
   }
   .answerLine.wrong {
-    background-color: red;
+    background-color: #ec6259;
   }
   .menu {
     display: block;

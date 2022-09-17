@@ -1,5 +1,5 @@
-.finishGameWrapper {
-  background: #f5f5f7;
+.startGameWrapper {
+  background: linear-gradient(to bottom right, #fff 50%, #fff3eb 0);
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,11 +8,11 @@
   width: 100vw;
   height: 100vh;
 }
-.finishGameImg {
+.startGameImg {
   height: auto;
   width: 100%;
 }
-.finishGameLogic {
+.startGameLogic {
   align-self: center;
   align-items: flex-start;
   display: flex;
@@ -22,51 +22,50 @@
   width: 100%;
   height: fit-content;
 }
-.finishGameTotal {
-  color: #88888c;
-  font-size: 32px;
-  margin: 0;
-}
-.finishGameScore {
+
+.startGameTitle {
   font-size: 56px;
-  margin-bottom: 65px;
+  margin-bottom: 100px;
 }
-.finishGameButton {
+.startGameButton {
   background: #ff8b37;
   border-radius: 12px;
   color: #fff;
   font-size: 20px;
   text-decoration: none;
   padding: 15px 100px;
+  cursor: pointer;
 }
-@media (max-width: 767px) {
-  .finishGameWrapper {
+.startGameButton:hover {
+  background-color: #ffac70;
+}
+.startGameButton:active {
+  background: #e87928;
+}
+@media screen and (max-width: 767px) {
+  .startGameWrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 50% 50%;
     padding: 0;
   }
-  .finishGameImg {
+  .startGameImg {
     align-self: end;
     justify-self: center;
     width: 90%;
+    margin-bottom: 25px;
   }
-  .finishGameLogic {
+  .startGameLogic {
     align-self: start;
     align-items: center;
-    justify-content: space-between;
     text-align: center;
     width: 100%;
     height: 100%;
   }
-  .finishGameTotal {
-    margin-top: 40px;
-    font-size: 20px;
-  }
-  .finishGameScore {
+  .startGameTitle {
     font-size: 32px;
     margin-bottom: 100px;
   }
-  .finishGameButton {
+  .startGameButton {
     padding: 10px 50px;
     margin-bottom: 50px;
     width: 90%;

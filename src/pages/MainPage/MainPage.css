@@ -19,7 +19,7 @@
 }
 .mainGameQuestionsBlock {
   width: 100%;
-  padding: 6% 2% 6% 4%;
+  padding: 10% 2% 6% 10%;
 }
 .mainGameQuestion {
   margin: 0;
@@ -29,6 +29,8 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  padding-left: 10%;
+  padding-bottom: 120px;
   /* margin-left: 80px; */
 }
 .mainGameScoreContainer {
@@ -46,10 +48,10 @@
   flex-direction: column-reverse;
   justify-content: center;
 }
-
 .menu {
   display: none;
 }
+
 @media (max-width: 767px) {
   .mainGameWrapper {
     overflow-x: auto;
@@ -76,6 +78,7 @@
   }
   .mainGameAnswers {
     justify-content: center;
+    padding: 0;
   }
   .mainGameScoreContainer {
     width: 100%;
