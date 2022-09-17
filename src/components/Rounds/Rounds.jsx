@@ -33,7 +33,7 @@ function Rounds({ round, indexRound, currentIndex }) {
             stroke="#D0D0D8"
           />
         </svg>
-        {/* <svg
+        <svg
           width="240"
           height="32"
           viewBox="0 0 240 32"
@@ -45,7 +45,7 @@ function Rounds({ round, indexRound, currentIndex }) {
             fill="white"
             stroke="#D0D0D8"
           />
-        </svg> */}
+        </svg>
       </div>
     </div>
   );

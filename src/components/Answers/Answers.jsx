@@ -30,10 +30,10 @@ function Answers({ answer, letter, currentAnswer, onSelect, disableButtons }) {
           <span className="answerLetter">{letter}</span>
           {answer}
         </p>
-        <div className="answerLine"></div>
-        <div className="swgWrap">
+        <div className={`answerLine ${status}`}></div>
+        <div className="svgWrap">
           <svg
-            className="svg"
+            // className="svg"
             width="373"
             height="72"
             viewBox="0 0 373 72"
@@ -46,7 +46,7 @@ function Answers({ answer, letter, currentAnswer, onSelect, disableButtons }) {
               stroke="#D0D0D8"
             />
           </svg>
-          {/* <svg
+          <svg
             width="288"
             height="56"
             viewBox="0 0 288 56"
@@ -58,7 +58,7 @@ function Answers({ answer, letter, currentAnswer, onSelect, disableButtons }) {
               fill="white"
               stroke="#D0D0D8"
             />
-          </svg> */}
+          </svg>
         </div>
       </div>
     </div>

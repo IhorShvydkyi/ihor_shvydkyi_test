@@ -49,3 +49,20 @@
 .roundsSvgWarp {
   z-index: 2;
 }
+.roundsSvgWarp svg:first-child {
+  display: block;
+}
+.roundsSvgWarp svg:last-child {
+  display: none;
+}
+@media (max-width: 767px) {
+  .roundsSvgWarp svg:first-child {
+    display: none;
+  }
+  .roundsSvgWarp svg:last-child {
+    display: block;
+  }
+  .roundsContent {
+    padding: 0;
+  }
+}

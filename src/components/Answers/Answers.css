@@ -83,8 +83,14 @@
   transition: 0.3s;
 }
 
-.swgWrap {
+.svgWrap {
   z-index: 1;
+}
+.svgWrap svg:first-child {
+  display: block;
+}
+.svgWrap svg:last-child {
+  display: none;
 }
 .answerWrap:hover path {
   stroke: #ff8b37;
@@ -92,4 +98,63 @@
 
 .answerWrap:hover:before {
   background-color: #ff8b37;
+}
+.menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  .answerDisabled {
+    width: 100%;
+  }
+  .answerWrap {
+    margin: 8px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .answerWrap:before {
+    display: none;
+  }
+  .answerContent {
+    width: 240px;
+    top: 31%;
+    left: calc(50% - 120px);
+    z-index: 3;
+  }
+  .answerLine {
+    display: block;
+    background-color: #ccc;
+  }
+
+  .svgWrap svg:first-child {
+    display: none;
+  }
+  .svgWrap svg:last-child {
+    display: block;
+  }
+  .answerWrap:before {
+    display: none;
+  }
+  .answerLine.selected {
+    background-color: yellow;
+  }
+  .answerLine.correct {
+    background-color: freen;
+  }
+  .answerLine.wrong {
+    background-color: red;
+  }
+  .menu {
+    display: block;
+    z-index: 100;
+  }
+  .menu svg {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    transition: 0.3s;
+  }
+  .menu svg:last-child {
+    opacity: 0;
+  }
 }
