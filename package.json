@@ -2,6 +2,7 @@
   "name": "ihor_shvydkyi_test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://IhorShvydkyi.github.io/ihor_shvydkyi_test",
   "dependencies": {
     "@emotion/styled": "^11.10.4",
     "@testing-library/jest-dom": "^5.14.1",
@@ -40,7 +41,6 @@
   "bugs": {
     "url": "https://github.com/IhorShvydkyi/ihor_shvydkyi_test/issues"
   },
-  "homepage": "https://github.com/IhorShvydkyi/ihor_shvydkyi_test",
   "eslintConfig": {
     "extends": [
       "react-app",
